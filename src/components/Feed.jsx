@@ -6,7 +6,7 @@ import Post from "./Post";
 const Feed = () => {
   return (
     <>
-      <div className="feed__scrollbar h-screen overflow-y-scroll overscroll-y-contain pb-10">
+      <div className="feed__scrollbar h-screen overflow-y-scroll overscroll-y-contain pb-10 mt-16">
         <div className=" flex px-2 md:px-[50px]  flex-1 flex-col ">
           <StoryReels />
           <MessageSender />
