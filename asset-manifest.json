@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/ashish385/Facebook_Clone/static/css/main.073c9b0a.css",
-    "main.js": "/ashish385/Facebook_Clone/static/js/main.2a707b1a.js",
-    "static/js/787.c9af9561.chunk.js": "/ashish385/Facebook_Clone/static/js/787.c9af9561.chunk.js",
-    "static/media/logo.svg": "/ashish385/Facebook_Clone/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/ashish385/Facebook_Clone/static/css/main.15319910.css",
+    "main.js": "/ashish385/Facebook_Clone/static/js/main.46879153.js",
     "index.html": "/ashish385/Facebook_Clone/index.html",
-    "main.073c9b0a.css.map": "/ashish385/Facebook_Clone/static/css/main.073c9b0a.css.map",
-    "main.2a707b1a.js.map": "/ashish385/Facebook_Clone/static/js/main.2a707b1a.js.map",
-    "787.c9af9561.chunk.js.map": "/ashish385/Facebook_Clone/static/js/787.c9af9561.chunk.js.map"
+    "main.15319910.css.map": "/ashish385/Facebook_Clone/static/css/main.15319910.css.map",
+    "main.46879153.js.map": "/ashish385/Facebook_Clone/static/js/main.46879153.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2a707b1a.js"
+    "static/css/main.15319910.css",
+    "static/js/main.46879153.js"
   ]
 }
