@@ -6,9 +6,9 @@ const StoryReels = () => {
     <>
       <section>
         <Paper>
-          <div className=" flex p-4 ">
+          <div className=" flex  p-4 overflow-x-scroll ">
             <div
-              className="story relative bg-cover bg-center bg-no-repeat w-[120px] h-[200px] shadow-md rounded-lg mx-1 hover:scale-105 cursor-pointer transition-all ease-linear duration-0"
+              className="story shrink relative bg-cover bg-center bg-no-repeat w-[120px] h-[200px] shadow-md rounded-lg mx-1 hover:scale-105 cursor-pointer transition-all ease-linear duration-0"
               style={{
                 backgroundImage: `url('https://w0.peakpx.com/wallpaper/944/187/HD-wallpaper-ganesh-black-cool-thumbnail.jpg')`,
               }}
@@ -36,7 +36,7 @@ const StoryReels = () => {
               </h3>
             </div>
             <div
-              className="story relative bg-cover bg-center bg-no-repeat w-[120px] h-[200px] shadow-md rounded-lg mx-1 hover:scale-105 cursor-pointer transition-all ease-linear duration-0"
+              className="story hidden md:block relative bg-cover bg-center bg-no-repeat w-[120px] h-[200px] shadow-md rounded-lg mx-1 hover:scale-105 cursor-pointer transition-all ease-linear duration-0"
               style={{
                 backgroundImage: `url('https://images.unsplash.com/photo-1543946207-39bd91e70ca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnVsbCUyMGhkJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&w=1000&q=80')`,
               }}
@@ -50,7 +50,7 @@ const StoryReels = () => {
               </h3>
             </div>
             <div
-              className="story relative bg-cover bg-center bg-no-repeat w-[120px] h-[200px] shadow-md rounded-lg mx-1 hover:scale-105 cursor-pointer transition-all ease-linear duration-0"
+              className="story hidden md:block relative bg-cover bg-center bg-no-repeat w-[120px] h-[200px] shadow-md rounded-lg mx-1 hover:scale-105 cursor-pointer transition-all ease-linear duration-0"
               style={{
                 backgroundImage: `url('https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80')`,
               }}

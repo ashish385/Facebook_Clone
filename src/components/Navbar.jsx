@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   AppBar,
   Button,
+  IconButton,
   Tab,
   Tabs,
   Toolbar,
@@ -10,7 +11,45 @@ import {
   useTheme,
 } from "@mui/material";
 import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
+import HomeIcon from "@mui/icons-material/Home";
+import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
+import PeopleIcon from "@mui/icons-material/People";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import AppsIcon from "@mui/icons-material/Apps";
+import ForumIcon from "@mui/icons-material/Forum";
+import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import DrawerComp from "./DrawerComp";
+const NavItem = [
+  {
+    icon: "HomeIcon",
+    link: "/",
+  },
+  {
+    icon: "OndemandVideoIcon",
+    link: "#",
+  },
+  {
+    icon: "PeopleIcon",
+    link: "#",
+  },
+  {
+    icon: "SportsEsportsIcon",
+    link: "#",
+  },
+];
+
+function LinkTab(props) {
+  return (
+    <Tab
+      component="a"
+      onClick={(event) => {
+        event.preventDefault();
+      }}
+      {...props}
+    />
+  );
+}
 
 const Navbar = () => {
   const [value, setValue] = useState();
@@ -20,13 +59,13 @@ const Navbar = () => {
   console.log(isMatch);
   return (
     <>
-      <AppBar >
+      <AppBar sx={{ bgcolor: "white", color: "black" }}>
         <Toolbar>
           <AddBusinessRoundedIcon sx={{ transform: "scale(2)" }} />
           {isMatch ? (
             <>
               <Typography sx={{ fontSize: "2rem", paddingLeft: "10%" }}>
-               Flow
+                Flow
               </Typography>
               <DrawerComp />
             </>
@@ -34,22 +73,45 @@ const Navbar = () => {
             <>
               <Tabs
                 sx={{ marginLeft: "auto" }}
-                indicatorColor="secondary"
+                indicatorColor="#1D5D9B"
                 textColor="inherit"
                 value={value}
                 onChange={(e, value) => setValue(value)}
               >
-                <Tab label="Products" />
-                <Tab label="Services" />
-                <Tab label="About Us" />
-                <Tab label="Contact" />
+                <LinkTab label={<HomeIcon fontSize="large" />} href="/drafts" />
+                <LinkTab
+                  label={<OndemandVideoIcon fontSize="large" />}
+                  href="/trash"
+                />
+                <LinkTab
+                  label={<PeopleIcon fontSize="large" />}
+                  href="/trash"
+                />
+                <LinkTab
+                  label={<SportsEsportsIcon fontSize="large" />}
+                  href="/trash"
+                />
               </Tabs>
-              <Button sx={{ marginLeft: "auto" }} variant="contained">
-                Login
-              </Button>
-              <Button sx={{ marginLeft: "10px" }} variant="contained">
-                SignUp
-              </Button>
+              <Tabs
+                sx={{ marginLeft: "auto" }}
+                indicatorColor=""
+                textColor="inherit"
+                value={value}
+                onChange={(e, value) => setValue(value)}
+              >
+                <IconButton>
+                  <AppsIcon className="text-gray-700" />
+                </IconButton>
+                <IconButton>
+                  <ForumIcon className="text-gray-700" />
+                </IconButton>
+                <IconButton>
+                  <CircleNotificationsIcon className="text-gray-700" />
+                </IconButton>
+                <IconButton>
+                  <ArrowDropDownIcon className="text-gray-700" />
+                </IconButton>
+              </Tabs>
             </>
           )}
         </Toolbar>

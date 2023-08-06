@@ -21,24 +21,26 @@ const MessageSender = () => {
                 </form>
               </div>
 
-              <div className="flex items-center justify-between border-t-[1px] mt-4 pt-2">
-                <div className="flex items-center py-1 px-4 gap-2 rounded-md mt-2 cursor-pointer hover:bg-gray-200">
-                  <VideoCallIcon style={{ color: "red" }} fontSize="large" />
-                  <p>Live</p>
+              <div className="flex w-full justify-around items-center  border-t-[1px] mt-4 pt-2">
+                <div className="flex items-center py-1 px-4 gap-2 rounded-md mt-2 cursor-pointer text-sm md:text-lg hover:bg-gray-200">
+                  <VideoCallIcon style={{ color: "red" }} fontSize="medium" />
+                  <p className="text-[0.75rem] md:text-[1rem]">Live</p>
                 </div>
-                <div className="flex items-center py-1 px-4 gap-2 rounded-md mt-2 cursor-pointer hover:bg-gray-200">
+                <div className="flex items-center py-1 px-4 gap-2 rounded-md mt-2 cursor-pointer text-sm md:text-lg hover:bg-gray-200">
                   <PhotoLibraryIcon
                     style={{ color: "orange" }}
-                    fontSize="large"
+                    fontSize="medium"
                   />
-                  <p>Photo/Video</p>
+                  <p className="text-[0.75rem] md:text-[1rem]">Photo/Video</p>
                 </div>
-                <div className="flex items-center py-1 px-4 gap-2 rounded-md mt-2 cursor-pointer hover:bg-gray-200">
+                <div className="flex items-center py-1 px-4 gap-2 rounded-md mt-2 cursor-pointer text-sm md:text-lg hover:bg-gray-200">
                   <EmojiEmotionsIcon
                     style={{ color: "yellowgreen" }}
-                    fontSize="large"
+                    fontSize="medium"
                   />
-                  <p>Feeling/Activity</p>
+                  <p className="text-[0.75rem] md:text-[1rem]">
+                    Feeling
+                  </p>
                 </div>
               </div>
             </div>
