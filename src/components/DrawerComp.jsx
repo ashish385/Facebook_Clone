@@ -2,16 +2,11 @@ import React, { useState } from "react";
 import {
   Drawer,
   IconButton,
-  List,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Sidebar from "./Sidebar";
 import SidebarOptions from "./SidebarOptions";
 import StorefrontIcon from "@mui/icons-material/Storefront";
-const pages = ["Products", "Services", "ABoutUs", "ContactUs"];
+// const pages = ["Products", "Services", "ABoutUs", "ContactUs"];
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
